@@ -1,0 +1,119 @@
+('mnist_tpu32_bs4096_scale1/10.0.120.2.trace.json.gz', 27.698, 17.6287547837389)
+('mnist_tpu32_bs4096_scale1/10.0.120.3.trace.json.gz', 27.422857999999998, 17.805629522641294)
+('mnist_tpu32_bs4096_scale1/10.0.120.4.trace.json.gz', 27.124000000000002, 18.00181573514231)
+('mnist_tpu32_bs4096_scale1/10.0.120.5.trace.json.gz', 26.831428, 18.198108948953443)
+
+('mnist_tpu32_bs4096_scale1024/10.0.120.2.trace.json.gz', 11223.995428, 44.54741657793912)
+('mnist_tpu32_bs4096_scale1024/10.0.120.3.trace.json.gz', 11223.723141999999, 44.54849729221876)
+('mnist_tpu32_bs4096_scale1024/10.0.120.4.trace.json.gz', 11208.910858, 44.60736697206769)
+('mnist_tpu32_bs4096_scale1024/10.0.120.5.trace.json.gz', 11222.844572, 44.55198473009736)
+
+('mnist_tpu32_bs4096_scale128/10.0.120.2.trace.json.gz', 1404.326286, 44.50532659188578)
+('mnist_tpu32_bs4096_scale128/10.0.120.3.trace.json.gz', 1386.837142, 45.066574947557896)
+('mnist_tpu32_bs4096_scale128/10.0.120.4.trace.json.gz', 1398.7996600000001, 44.681166136400115)
+('mnist_tpu32_bs4096_scale128/10.0.120.5.trace.json.gz', 1398.9371420000002, 44.676775048410285)
+
+('mnist_tpu32_bs4096_scale16/10.0.120.2.trace.json.gz', 179.382286, 43.55223792833146)
+('mnist_tpu32_bs4096_scale16/10.0.120.3.trace.json.gz', 178.25943, 43.82657343849915)
+('mnist_tpu32_bs4096_scale16/10.0.120.4.trace.json.gz', 179.60626599999998, 43.497925623597126)
+('mnist_tpu32_bs4096_scale16/10.0.120.5.trace.json.gz', 179.117142, 43.61670755108408)
+
+('mnist_tpu32_bs4096_scale2/10.0.120.2.trace.json.gz', 36.97857200000001, 26.408875388698075)
+('mnist_tpu32_bs4096_scale2/10.0.120.3.trace.json.gz', 36.398571999999994, 26.829692659371368)
+('mnist_tpu32_bs4096_scale2/10.0.120.4.trace.json.gz', 36.710608, 26.601643317920534)
+('mnist_tpu32_bs4096_scale2/10.0.120.5.trace.json.gz', 37.182856, 26.263784040687998)
+
+('mnist_tpu32_bs4096_scale2048/10.0.120.2.trace.json.gz', 22403.327428, 44.63622661472088)
+('mnist_tpu32_bs4096_scale2048/10.0.120.3.trace.json.gz', 22403.31057, 44.63626020250274)
+('mnist_tpu32_bs4096_scale2048/10.0.120.4.trace.json.gz', 22402.560571999995, 44.63775454533788)
+('mnist_tpu32_bs4096_scale2048/10.0.120.5.trace.json.gz', 22405.973428, 44.63095536614059)
+
+('mnist_tpu32_bs4096_scale256/10.0.120.2.trace.json.gz', 2819.614, 44.33230931609788)
+('mnist_tpu32_bs4096_scale256/10.0.120.3.trace.json.gz', 2847.2602859999997, 43.9018521118796)
+('mnist_tpu32_bs4096_scale256/10.0.120.4.trace.json.gz', 2811.929142, 44.453467241743176)
+('mnist_tpu32_bs4096_scale256/10.0.120.5.trace.json.gz', 2834.754482, 44.095529540113446)
+
+('mnist_tpu32_bs4096_scale32/10.0.120.2.trace.json.gz', 362.78771599999993, 43.06926423054524)
+('mnist_tpu32_bs4096_scale32/10.0.120.3.trace.json.gz', 360.187428, 43.380192603501975)
+('mnist_tpu32_bs4096_scale32/10.0.120.4.trace.json.gz', 362.92314400000004, 43.0531925514235)
+('mnist_tpu32_bs4096_scale32/10.0.120.5.trace.json.gz', 362.714572, 43.07794945718365)
+
+('mnist_tpu32_bs4096_scale4/10.0.120.2.trace.json.gz', 56.447428, 34.60077933045948)
+('mnist_tpu32_bs4096_scale4/10.0.120.3.trace.json.gz', 55.998853999999994, 34.87794589510707)
+('mnist_tpu32_bs4096_scale4/10.0.120.4.trace.json.gz', 56.51800000000001, 34.55757457801054)
+('mnist_tpu32_bs4096_scale4/10.0.120.5.trace.json.gz', 56.215142, 34.743752848654196)
+
+('mnist_tpu32_bs4096_scale512/10.0.120.2.trace.json.gz', 5626.228229999999, 44.43474202965279)
+('mnist_tpu32_bs4096_scale512/10.0.120.3.trace.json.gz', 5624.31343, 44.44986985727074)
+('mnist_tpu32_bs4096_scale512/10.0.120.4.trace.json.gz', 5621.4834280000005, 44.472247086023074)
+('mnist_tpu32_bs4096_scale512/10.0.120.5.trace.json.gz', 5637.586016, 44.34522139271604)
+
+('mnist_tpu32_bs4096_scale64/10.0.120.2.trace.json.gz', 699.4322840000001, 44.67909290844229)
+('mnist_tpu32_bs4096_scale64/10.0.120.3.trace.json.gz', 698.763142, 44.72187801800227)
+('mnist_tpu32_bs4096_scale64/10.0.120.4.trace.json.gz', 696.8599999999999, 44.84401457968603)
+('mnist_tpu32_bs4096_scale64/10.0.120.5.trace.json.gz', 695.457144, 44.93447262654045)
+
+('mnist_tpu32_bs4096_scale8/10.0.120.2.trace.json.gz', 97.92425, 39.89052762722206)
+('mnist_tpu32_bs4096_scale8/10.0.120.3.trace.json.gz', 95.861712, 40.748802817124734)
+('mnist_tpu32_bs4096_scale8/10.0.120.4.trace.json.gz', 95.887714, 40.73775290961676)
+('mnist_tpu32_bs4096_scale8/10.0.120.5.trace.json.gz', 96.830858, 40.34096238205387)
+
+('mnist_tpuv2n8_bs1024_scale1/10.0.101.2.trace.json.gz', 16.599142, 29.41605355264748)
+('mnist_tpuv2n8_bs1024_scale1024/10.0.101.2.trace.json.gz', 10736.071714, 46.571969088842096)
+('mnist_tpuv2n8_bs1024_scale128/10.0.101.2.trace.json.gz', 1345.031144, 46.46732551792867)
+('mnist_tpuv2n8_bs1024_scale16/10.0.101.2.trace.json.gz', 171.45257, 45.566537731105456)
+('mnist_tpuv2n8_bs1024_scale2/10.0.101.2.trace.json.gz', 'Error!!')
+('mnist_tpuv2n8_bs1024_scale2048/10.0.101.2.trace.json.gz', 21492.785142, 46.52724127622975)
+('mnist_tpuv2n8_bs1024_scale256/10.0.101.2.trace.json.gz', 2697.932286, 46.33177809859976)
+('mnist_tpuv2n8_bs1024_scale32/10.0.101.2.trace.json.gz', 343.330572, 45.51007476258188)
+('mnist_tpuv2n8_bs1024_scale4/10.0.101.2.trace.json.gz', 46.468286, 42.03135445968461)
+('mnist_tpuv2n8_bs1024_scale512/10.0.101.2.trace.json.gz', 5388.969427999999, 46.39105924428711)
+('mnist_tpuv2n8_bs1024_scale64/10.0.101.2.trace.json.gz', 674.986572, 46.2972173022725)
+('mnist_tpuv2n8_bs1024_scale8/10.0.101.2.trace.json.gz', 87.59742800000001, 44.59320426622571)
+
+
+
+mnist_tpuv2n8_bs1024_scale8 model_size:4.0MB mean_time:87.597428s bandwidth:0.0445932042662GB/s
+mnist_tpu512a_bs65536_scale32 model_size:16.0MB mean_time:350.538206281s bandwidth:0.0445743137838GB/s
+mnist_tpu512a_bs65536_scale16 model_size:8.0MB mean_time:176.694895125s bandwidth:0.0442146333343GB/s
+mnist_tpu32_bs4096_scale2 model_size:1.0MB mean_time:36.817652s bandwidth:0.0265243014411GB/s
+mnist_tpu32_bs4096_scale1024 model_size:512.0MB mean_time:11219.8685s bandwidth:0.0445638021515GB/s
+mnist_tpu32_bs4096_scale4 model_size:2.0MB mean_time:56.294856s bandwidth:0.034694555396GB/s
+mnist_tpuv2n8_bs1024_scale1 model_size:0.5MB mean_time:16.599142s bandwidth:0.0294160535526GB/s
+mnist_tpu32_bs4096_scale1 model_size:0.5MB mean_time:27.2690715s bandwidth:0.0179060460493GB/s
+mnist_tpu32_bs4096_scale512 model_size:256.0MB mean_time:5627.402776s bandwidth:0.0444254676538GB/s
+mnist_tpu32_bs4096_scale128 model_size:64.0MB mean_time:1397.2250575s bandwidth:0.0447315195677GB/s
+mnist_tpu32_bs4096_scale8 model_size:4.0MB mean_time:96.6261335s bandwidth:0.0404264339109GB/s
+mnist_tpu128_bs16384_scale64 model_size:32.0MB mean_time:750.509947625s bandwidth:0.0416383554927GB/s
+mnist_tpuv2n8_bs1024_scale128 model_size:64.0MB mean_time:1345.031144s bandwidth:0.0464673255179GB/s
+mnist_tpu32_bs4096_scale256 model_size:128.0MB mean_time:2828.3894775s bandwidth:0.0441947620702GB/s
+mnist_tpuv2n8_bs1024_scale2 model_size:1.0MB mean_time:171.45257s bandwidth:0.00569581721639GB/s
+mnist_tpu32_bs4096_scale64 model_size:32.0MB mean_time:697.6281425s bandwidth:0.0447946378539GB/s
+mnist_tpuv2n8_bs1024_scale64 model_size:32.0MB mean_time:674.986572s bandwidth:0.0462972173023GB/s
+mnist_tpu512a_bs65536_scale8 model_size:4.0MB mean_time:111.584834438s bandwidth:0.035006997319GB/s
+mnist_tpuv2n8_bs1024_scale2048 model_size:1024.0MB mean_time:21492.785142s bandwidth:0.0465272412762GB/s
+mnist_tpu512a_bs65536_scale4 model_size:2.0MB mean_time:80.6881074375s bandwidth:0.0242058595997GB/s
+mnist_tpu128_bs16384_scale128 model_size:64.0MB mean_time:1490.49129825s bandwidth:0.041932482312GB/s
+mnist_tpu128_bs16384_scale512 model_size:256.0MB mean_time:5980.5406565s bandwidth:0.0418022406935GB/s
+mnist_tpu512a_bs65536_scale1 model_size:0.5MB mean_time:56.3129919063s bandwidth:0.00867084545628GB/s
+mnist_tpu512a_bs65536_scale2 model_size:1.0MB mean_time:63.6796326875s bandwidth:0.0153355548515GB/s
+mnist_tpu128_bs16384_scale256 model_size:128.0MB mean_time:2973.87994025s bandwidth:0.0420326316164GB/s
+mnist_tpuv2n8_bs1024_scale4 model_size:2.0MB mean_time:46.468286s bandwidth:0.0420313544597GB/s
+mnist_tpu32_bs4096_scale32 model_size:16.0MB mean_time:362.153215s bandwidth:0.0431447226004GB/s
+mnist_tpuv2n8_bs1024_scale512 model_size:256.0MB mean_time:5388.969428s bandwidth:0.0463910592443GB/s
+mnist_tpu32_bs4096_scale2048 model_size:1024.0MB mean_time:22403.7929995s bandwidth:0.0446352990327GB/s
+mnist_tpu32_bs4096_scale16 model_size:8.0MB mean_time:179.091281s bandwidth:0.043623005857GB/s
+mnist_tpuv2n8_bs1024_scale256 model_size:128.0MB mean_time:2697.932286s bandwidth:0.0463317780986GB/s
+mnist_tpuv2n8_bs1024_scale1024 model_size:512.0MB mean_time:10736.071714s bandwidth:0.0465719690888GB/s
+mnist_tpu512a_bs65536_scale128 model_size:64.0MB mean_time:1311.70841469s bandwidth:0.0476477845992GB/s
+mnist_tpu128_bs16384_scale8 model_size:4.0MB mean_time:121.4858895s bandwidth:0.0321539399849GB/s
+mnist_tpu128_bs16384_scale4 model_size:2.0MB mean_time:84.60369175s bandwidth:0.0230855765227GB/s
+mnist_tpu512a_bs65536_scale64 model_size:32.0MB mean_time:668.035892094s bandwidth:0.0467789236624GB/s
+mnist_tpu128_bs16384_scale2 model_size:1.0MB mean_time:65.52242025s bandwidth:0.0149042495114GB/s
+mnist_tpu128_bs16384_scale1 model_size:0.5MB mean_time:56.129303625s bandwidth:0.00869922159131GB/s
+mnist_tpuv2n8_bs1024_scale16 model_size:8.0MB mean_time:171.45257s bandwidth:0.0455665377311GB/s
+mnist_tpu128_bs16384_scale16 model_size:8.0MB mean_time:197.285365875s bandwidth:0.0395999975231GB/s
+mnist_tpu512a_bs65536_scale256 model_size:128.0MB mean_time:2568.27631678s bandwidth:0.048670775486GB/s
+mnist_tpuv2n8_bs1024_scale32 model_size:16.0MB mean_time:343.330572s bandwidth:0.0455100747626GB/s
+mnist_tpu128_bs16384_scale1024 model_size:512.0MB mean_time:11863.3565371s bandwidth:0.0421465879775GB/s
+mnist_tpu128_bs16384_scale32 model_size:16.0MB mean_time:391.043296s bandwidth:0.0399572123083GB/s
