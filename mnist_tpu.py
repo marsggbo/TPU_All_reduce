@@ -55,7 +55,7 @@ tf.flags.DEFINE_string("model_dir", None, "Estimator model_dir")
 tf.flags.DEFINE_integer("batch_size", 1024,
                         "Mini-batch size for the training. Note that this "
                         "is the global batch size and not the per-shard batch.")
-tf.flags.DEFINE_integer("train_steps", 10000, "Total number of training steps.")
+tf.flags.DEFINE_integer("train_steps", 1000000, "Total number of training steps.")
 tf.flags.DEFINE_integer("eval_steps", 0,
                         "Total number of evaluation steps. If `0`, evaluation "
                         "after training is skipped.")
@@ -64,7 +64,7 @@ tf.flags.DEFINE_float("learning_rate", 0.05, "Learning rate.")
 tf.flags.DEFINE_bool("use_tpu", True, "Use TPUs rather than plain CPUs")
 tf.flags.DEFINE_bool("use_bfloa16", False, "Use TPUs rather than plain CPUs")
 tf.flags.DEFINE_bool("enable_predict", True, "Do some predictions at the end")
-tf.flags.DEFINE_integer("iterations", 50,
+tf.flags.DEFINE_integer("iterations", 5000,
                         "Number of iterations per TPU training loop.")
 tf.flags.DEFINE_integer("num_shards", 8, "Number of shards (TPU chips).")
 tf.flags.DEFINE_integer("scale", 1, "Scale of model size.")
@@ -78,13 +78,21 @@ def metric_fn(labels, logits):
   return {"accuracy": accuracy}
 
 def create_model(scale=1):
+  '''
+  scale=-1: model size=256KB
+  scale=1: model size=512KB
+  scale=2: model size=1MB
+  '''
   l = tf.keras.layers
+  input_shape = (512*scale) if scale>0 else (512//abs(scale))
   model = tf.keras.Sequential(
     [
-      l.InputLayer(input_shape=(128*scale,)),
-      l.Dense(1024, use_bias=False),
+      l.InputLayer(input_shape=input_shape),
+      l.Dense(512, use_bias=False),
     ])
-  print("Scale: {} Model size: {} MB".format(scale, model.count_params()*4/1024**2))
+  model_size = model.count_params()*4/1024**2 if scale>0 else model.count_params()*4/1024
+  model_size = str(model_size)+" MB" if scale>0 else str(model_size)+" KB"
+  print("Scale: {} Model size: {}".format(scale, model_size))
   return model
 
 def model_fn(features, labels, mode, params):
@@ -93,8 +101,8 @@ def model_fn(features, labels, mode, params):
   scale = params["scale"]
   bs = params["bs"]
   del params
-  image = tf.random.normal([bs, 128*scale])
-  labels = tf.random.normal([bs, 1])
+  image = tf.random.normal([bs, 512*scale]) if scale>0 else tf.random.normal([bs, 512//abs(scale)]) 
+  labels = tf.constant(np.random.randint(0,512,[bs,1]))
   labels = tf.cast(labels, tf.int64)
 
   model = create_model(scale=FLAGS.scale)
@@ -165,10 +173,9 @@ def train_input_fn(params):
   # Retrieves the batch size for the current shard. The # of shards is
   # computed according to the input pipeline deployment. See
   # `tf.contrib.tpu.RunConfig` for details.
-  ds = dataset.train(data_dir).cache().repeat().shuffle(
-      buffer_size=50000).apply(
-          tf.contrib.data.batch_and_drop_remainder(batch_size))
-  images, labels = ds.make_one_shot_iterator().get_next()
+  images = tf.random.normal([256, 512])
+  labels = tf.random.normal([256, 1])
+  labels = tf.cast(labels, tf.int64)
   return images, labels
 
 if __name__ == "__main__":

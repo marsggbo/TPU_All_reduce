@@ -44,4 +44,9 @@ plugins
         |__*.tracetable
 ```
 
-parse_gzfile.py 文件就是对`trace.json.gz`文件进行解析并得到最终的带宽。
+parse_gzfile.py 文件就是对`trace.json.gz`文件进行解析并得到最终的带宽，其实现原理如下：
+
+- `cp()`函数: 将各个目录下的`*.trace.json.gz`文件拷贝到当前目录,例如`mnist_tpuv2n8_bs1024_scale-256/10.0.0.102.trace.json.gz`
+- 拷贝完数据后对`gz`文件使用`parse()`函数进行遍历解析， 最终得到一个json格式的变量
+- 最后将上面的变量保存至`log.json`文件中
+
