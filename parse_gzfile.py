@@ -41,7 +41,7 @@ def cp():
     for d in dirs:
         if not os.path.exists(d):
             os.mkdir(d)
-            os.system('gsutil cp gs://hkbuautoml/{}/plugins/profile/*/*.gz {}/'.format(d,d))
+            os.system('gsutil -m cp gs://hkbuautoml/{}/plugins/profile/*/*.gz {}/'.format(d,d))
         else:
             print('{} already exists'.format(d))
 

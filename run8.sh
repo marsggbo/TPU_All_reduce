@@ -14,7 +14,7 @@ python mnist_tpu.py \
 	--data_dir=$DATA_DIR \
 	--model_dir=$MODEL_DIR \
 	--use_tpu=True \
-	--iterations=500 \
+	--iterations=5000 \
 	--train_steps=50000 \
 	--use_bfloat16=False \
 	--enablr_predict=False \
